@@ -1,6 +1,6 @@
 tasks:
-    - init: >
-        touch /tmp/.npm-lock &&
-        npm install &&
-        rm /tmp/.npm-lock
-        command: npm run dev
+- init: npm install
+  command: npm run dev
+ports:
+- port: 5000
+  onOpen: open-preview
