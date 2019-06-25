@@ -1,5 +1,4 @@
 tasks:
 - init: npm install
   command: >
-    sed -i "s/location\.host/$(gp url 35729)/" ./node_modules/rollup-plugin-livereload/dist/*.js &&
-    npm run dev
+   sed -i "s_location\.host_'https://35729-b9020614-001c-44d0-b408-f0f20c01dbaa.ws-eu0.gitpod.io'_" node_modules/rollup-plugin-livereload/dist/index.*.js
