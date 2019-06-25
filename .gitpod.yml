@@ -2,4 +2,5 @@ tasks:
 - init: npm install
   command: >
    sed -i "s_v\.src.*livereload\.js_v.src='$(gp url 35729)/livereload.js_" node_modules/rollup-plugin-livereload/dist/index.*.js &&
+   sed -i "s_this\.options\.port_443_g" node_modules/livereload/ext/livereload.js &&
    npm run dev
